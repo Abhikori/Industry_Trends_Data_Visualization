@@ -1,0 +1,17 @@
+{
+    "name": "abhishek/industrytrend",
+    "autoload": {
+        "psr-4": {
+            "Abhishek\\Industrytrend\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Abhishek",
+            "email": "abhishekkori7902@gmail.com"
+        }
+    ],
+    "require": {
+        "mongodb/mongodb": "^1.19"
+    }
+}
