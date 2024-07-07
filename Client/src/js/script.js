@@ -1,4 +1,4 @@
-import { renderBarChart, renderEndYearBarChart } from './barchart.js';
+import { renderBarChart, renderEndYearBarChart } from './barChart.js';
 import { renderBubbleChart } from './bubbleChart.js';
 import { renderPieChart, renderPestlePieChart } from './pieChart.js';
 import { applyFilters, initializeFilters, resetFilters } from './filters.js';
