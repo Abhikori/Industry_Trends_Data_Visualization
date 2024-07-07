@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filters</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Filters</h1>
+    </header>
+    <div id="filtersPage">
+        <div id="filters">
+            <label for="endYearFilter">End Year:</label>
+            <select id="endYearFilter"></select>
+
+            <label for="intensityFilter">Intensity:</label>
+            <select id="intensityFilter"></select>
+
+            <label for="sectorFilter">Sector:</label>
+            <select id="sectorFilter"></select>
+
+            <label for="topicFilter">Topic:</label>
+            <select id="topicFilter"></select>
+
+            <label for="regionFilter">Region:</label>
+            <select id="regionFilter"></select>
+
+            <label for="cityFilter">City:</label>
+            <select id="cityFilter"></select>
+
+            <label for="countryFilter">Country:</label>
+            <select id="countryFilter"></select>
+
+            <label for="startYearFilter">Start Year:</label>
+            <select id="startYearFilter"></select>
+
+            <label for="relevanceFilter">Relevance:</label>
+            <select id="relevanceFilter"></select>
+
+            <label for="pestleFilter">Pestle:</label>
+            <select id="pestleFilter"></select>
+
+            <label for="sourceFilter">Source:</label>
+            <select id="sourceFilter"></select>
+
+            <label for="likelihoodFilter">Likelihood:</label>
+            <select id="likelihoodFilter"></select>
+            <div id="FilterBtn">
+                <button id="applyFiltersBtn">Apply Filters</button>
+                <button id="resetFiltersBtn">Reset Filters</button>
+            </div>
+        </div>
+    <div id="tablePage">
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>End Year</th>
+                    <th>Intensity</th>
+                    <th>Sector</th>
+                    <th>Topic</th>
+                    <th>Insight</th>
+                    <th>Region</th>
+                    <th>Start Year</th>
+                    <th>Relevance</th>
+                    <th>Pestle</th>
+                    <th>Source</th>
+                    <th>Likelihood</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div id="pagination">
+            <button id="prevPage">Previous</button>
+            <span id="pageInfo"></span>
+            <button id="nextPage">Next</button>
+        </div>
+    </div>
+    </div>
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/filters.js"></script>
+</body>
+</html>
