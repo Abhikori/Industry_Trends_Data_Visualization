@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Visualization Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="header-content">
+        <h1>Data Visualization Dashboard</h1>
+        <button id="filterButton">Filters</button>
+      </div>
+    </header>
+
+    <div id="dashboard">
+      <div id="charts">
+        <div class="chartclass" id="barChart"></div>
+        <div class="chartclass" id="endYearBarChart"></div>
+        <div class="chartclass" id="pieChart"></div>
+        <div class="chartclass" id="pestlePieChart"></div>
+        <div class="chartclass" id="bubbleChart"></div>
+      </div>
+    </div>
+
+    <script type="module" src="js/script.js"></script>
+    <script>
+      document
+        .getElementById("filterButton")
+        .addEventListener("click", function () {
+          window.location.href = "filters.html";
+        });
+    </script>
+  </body>
+</html>
